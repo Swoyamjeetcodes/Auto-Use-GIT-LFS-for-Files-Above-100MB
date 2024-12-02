@@ -1,13 +1,13 @@
-# Git LFS Pre-Commit Hook for Files ≥ 100 MB
+# 🚀 Git LFS Pre-Commit Hook for Files ≥ 100 MB 🗂️
 
-This guide provides step-by-step instructions to create a Git pre-commit hook that automatically tracks files larger than or equal to 100 MB using Git LFS. The script is written in PowerShell for use on Windows systems.
+This guide provides step-by-step instructions to create a Git pre-commit hook that automatically tracks files larger than or equal to **100 MB** using Git LFS. The script is written in **PowerShell** for use on Windows systems.
 
 ---
 
-## Prerequisites
+## ✅ Prerequisites
 
-1. **Git** must be installed and added to your PATH.
-2. **Git LFS** must be installed. You can install it with:
+1. **Git** must be installed and added to your PATH.  
+2. **Git LFS** must be installed. You can install it with:  
    ```bash
    git lfs install
    ```
@@ -15,7 +15,7 @@ This guide provides step-by-step instructions to create a Git pre-commit hook th
 
 ---
 
-## Steps to Set Up the Pre-Commit Hook
+## 🛠️ Steps to Set Up the Pre-Commit Hook
 
 ### 1. Navigate to the `.git/hooks` Directory
 Go to the `.git/hooks` directory in your repository:
@@ -106,10 +106,10 @@ Unblock-File -Path .git/hooks/pre-commit.ps1
 
 ---
 
-## Testing the Pre-Commit Hook
+## 🧪 Testing the Pre-Commit Hook
 
 1. **Stage a Large File**  
-   Add a file larger than or equal to 100 MB:
+   Add a file larger than or equal to **100 MB**:
    ```powershell
    git add <large-file>
    ```
@@ -128,15 +128,13 @@ Unblock-File -Path .git/hooks/pre-commit.ps1
 
 ---
 
-## Notes
+## 📋 Notes
 
-- This script automatically tracks files ≥ 100 MB using Git LFS during the commit process.
+- This script automatically tracks files ≥ **100 MB** using Git LFS during the commit process.
 - If you modify the threshold, update the `$sizeThreshold` variable in the `pre-commit.ps1` script.
-- The hook works on Windows PowerShell and Git for Windows.
+- The hook works on **Windows PowerShell** and **Git for Windows**.
 
 ---
 
-## License
+## 📜 License
 This script is open-source. Feel free to use and modify it as needed.
-
---- 
