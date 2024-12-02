@@ -1,6 +1,6 @@
-# Git LFS Pre-Commit Hook for Files ≥ 50 MB
+# Git LFS Pre-Commit Hook for Files ≥ 100 MB
 
-This guide provides step-by-step instructions to create a Git pre-commit hook that automatically tracks files larger than or equal to 50 MB using Git LFS. The script is written in PowerShell for use on Windows systems.
+This guide provides step-by-step instructions to create a Git pre-commit hook that automatically tracks files larger than or equal to 100 MB using Git LFS. The script is written in PowerShell for use on Windows systems.
 
 ---
 
@@ -57,10 +57,10 @@ Paste the following PowerShell script into the file:
 
 ```powershell
 # PowerShell script for Git LFS pre-commit hook
-# This script checks staged files and adds files >= 50 MB to Git LFS.
+# This script checks staged files and adds files >= 100 MB to Git LFS.
 
-# Size threshold (50 MB in bytes)
-$sizeThreshold = 50MB
+# Size threshold (100 MB in bytes)
+$sizeThreshold = 100MB
 
 # Ensure Git command is available
 function Check-GitCommand {
@@ -109,7 +109,7 @@ Unblock-File -Path .git/hooks/pre-commit.ps1
 ## Testing the Pre-Commit Hook
 
 1. **Stage a Large File**  
-   Add a file larger than or equal to 50 MB:
+   Add a file larger than or equal to 100 MB:
    ```powershell
    git add <large-file>
    ```
@@ -130,7 +130,7 @@ Unblock-File -Path .git/hooks/pre-commit.ps1
 
 ## Notes
 
-- This script automatically tracks files ≥ 50 MB using Git LFS during the commit process.
+- This script automatically tracks files ≥ 100 MB using Git LFS during the commit process.
 - If you modify the threshold, update the `$sizeThreshold` variable in the `pre-commit.ps1` script.
 - The hook works on Windows PowerShell and Git for Windows.
 
